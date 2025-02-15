@@ -57,6 +57,8 @@ setInterval(function(){
         console.log("ringing")
         ringtone.play()
         ringtone.loop=true
+        set.innerText="Stop Alarm";
+        set.style.backgroundColor='orange';
         }
 
 },1000)
