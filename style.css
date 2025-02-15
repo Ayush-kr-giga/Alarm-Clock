@@ -20,7 +20,7 @@ body {
 
 #title {
     font-family: 'Indie Flower';
-    font-size: 4rem;
+    font-size: 5rem;
     text-align: center;
     color: #fff;
     text-shadow: 0 0 5px #fff, 
@@ -35,7 +35,7 @@ body {
 
 
 #time {
-    font-size: 2rem;
+    font-size: 3rem;
     color: rgb(11, 215, 233);
     text-align: center;
     text-shadow:
@@ -45,23 +45,23 @@ body {
 }
 
 
-#selection {
+.selection {
     width: 100%;
-    margin: 5vh auto;
+    margin: 7vh auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
 }
 
-#selection select {
+.selection select {
     outline: none;
     border: none;
-    height: 40px;
-    width: 80px;
+    height: 60px;
+    width: 100px;
     background-color: transparent;
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 
@@ -78,13 +78,15 @@ button {
     background-color: #0073e6;
     color: #fff;
     border: none;
+    width: 15vw;
+    height: 6vh;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     display: block;
-    margin: 10vh auto;
+    margin: 7vh auto;
 }
 
 button:hover {
@@ -93,7 +95,10 @@ button:hover {
 
 
 
-
+.disable{
+    opacity: 0.5;
+    pointer-events: none;
+}
 
 
 
