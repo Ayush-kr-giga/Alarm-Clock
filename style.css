@@ -1,0 +1,139 @@
+/* Global Styles */
+body {
+    background: linear-gradient(145deg, #343333, #2c2b2b);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#clockBody {
+    margin: 10vh auto;
+    width: 90vw; 
+    max-width: 500px;     
+    padding: 2rem;     
+    box-sizing: border-box;
+}
+
+
+#title {
+    font-family: 'Indie Flower';
+    font-size: 4rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 
+                 0 0 10px #fff, 
+                 0 0 15px #0073e6, 
+                 0 0 20px #0073e6, 
+                 0 0 25px #0073e6, 
+                 0 0 30px #0073e6, 
+                 0 0 35px #0073e6;
+    margin-bottom: 2rem;
+}
+
+
+#time {
+    font-size: 2rem;
+    color: rgb(11, 215, 233);
+    text-align: center;
+    text-shadow:
+      0 0 10px rgb(11, 215, 233),
+      0 0 1px rgb(11, 215, 233);
+    margin: 5vh 0;
+}
+
+
+#selection {
+    width: 100%;
+    margin: 5vh auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#selection select {
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 80px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+.column {
+    border-radius: 4px;
+    padding: 0 10px;
+    padding-right: 5px;
+    background: linear-gradient(145deg, #343333, #2c2b2b);
+    box-shadow: 13px 13px 38px #191818,
+                -13px -13px 38px #4a4848;
+}
+
+button {
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 10vh auto;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    #title {
+        font-size: 2.5rem;
+    }
+    #time {
+        font-size: 1.3em;
+    }
+    #selection select {
+        width: 70px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #title {
+        font-size: 2rem;
+    }
+    #time {
+        font-size: 1.2em;
+    }
+    #selection {
+        flex-direction: column;
+        align-items: center;
+    }
+    #selection select {
+        width: 100%;
+        max-width: 200px;
+    }
+}
